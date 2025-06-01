@@ -1,0 +1,38 @@
+dnl args: [gitlab-prjnm]
+m4d4(diredls, $HOME/data/diredls.shared.symlinks/gitdir/.diredls)
+m4ub.cmdlogic(
+prjnm=${1:-${PWD##*/}}
+prjnm=${prjnm%.git}
+dnl todo: for .git/config/core worktree=xxx will be future consideration
+m4ub.ise(.git) || m4ub.cmds(git init,m4ug.ciall(ori))
+gitdir=$(git rev-parse --absolute-git-dir 2>/dev/null)
+! m4ub.ise(m4diredls) || m4ub.ise($gitdir/.diredls) || ln -s m4diredls -t $gitdir
+
+git remote -v|sed -n '\%^.*\tssh://git@ssh.github.com%q1' || m4ub.com(m4ub.echo2(you already have github rmt so no need githubify),exit)
+
+dnl defl rmt
+rmt=origin
+dnl if it has origin then i will use github as remote, if no origin i will use origin
+git remote -v|sed -n '\%^origin\t%q1' || rmt=github
+dnl ensure new rmt not exist yet
+git remote -v|sed -n '\%^'$rmt'\t%q1' || m4ub.com(m4ub.echo2(either rmt already exists - origin or github - out of my scope, i wont try anything else, exit now),exit)
+
+rbr=master
+dnl master is remote br nm
+git remote add -m $rbr $rmt ssh://git@ssh.github.com:443/aeronwang/$prjnm.git
+git push $rmt $rbr
+git fetch $rmt
+m4ub.nul12(git rev $rmt/$rbr)
+m4ub.eqs(origin,$rmt) || dnl git checkout -b github/master github/master
+git branch github/master remotes/github/master
+)(sep=|log=|time=|pre=)
+dnl Local Variables:
+dnl mode                         : m4
+dnl eval                         : (hack-dir-local-variables-after-change-major-mode)
+dnl coding                       : iso-latin-1-unix
+dnl delete-trailing-whitespace   : t
+dnl delete-trailing-blank-lines  : t
+dnl eval                         : (setq comment-start "dnl " comment-start-skip "dnl[ 	]+")
+dnl eval                         : (m4bq 1)
+dnl eval                         : (setq run-the-fileargs '("mfour 'm4postsave(%s, ~/bin/%s)(mfor=1|exe=1)'" fa-curfile fa-curfnm))
+dnl End:
