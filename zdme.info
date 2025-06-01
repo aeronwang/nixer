@@ -1,0 +1,35 @@
+;;; -*- coding: utf-8; -*-
+
+
+Node: Top, Up: (dir), Next:
+
+* Menu:
+
+* dl tcl src: dl tcl src.
+
+* Index manually::
+* Index by date::
+
+Node: dl tcl src, Up: Top, Prev: , Next: 
+
+202506017
+wget 'http://downloads.sourceforge.net/tcl/tcl8.6.15-src.tar.gz'
+^-> works
+
+Node: Index manually, Up: Top, Prev: , Next:
+
+* Menu:
+
+
+Node: Index by date, Up: Top, Prev: , Next:
+
+* Menu:
+
+
+* +202506017 dl tcl src: dl tcl src. (line 0)
+Local Variables:
+delete-trailing-whitespace   : t
+delete-trailing-blank-lines  : t
+require-final-newline        : t
+comment-start                : nil
+End:
