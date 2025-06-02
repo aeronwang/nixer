@@ -7,9 +7,17 @@ Node: Top, Up: (dir), Next:
 
 * dl tcl src: dl tcl src.
 * boost over 100M over github limit: boost over 100M over github limit.
+* now can get list of all sourceforge: now can get list of all sourceforge.
 
 * Index manually::
 * Index by date::
+
+Node: now can get list of all sourceforge, Up: Top, Prev: , Next:
+
+202506021
+ie sth like
+path-info -r .#emacs-nox 2>&1|xargs nix derivation show |jq .|grep '"urls".*sourceforge'
+
 
 Node: boost over 100M over github limit, Up: Top, Prev: , Next:
 
@@ -63,6 +71,7 @@ Node: Index by date, Up: Top, Prev: , Next:
 * Menu:
 
 
+* +202506021 now can get list of all sourceforge: now can get list of all sourceforge. (line 0)
 * +202506021 boost over 100M over github limit: boost over 100M over github limit. (line 0)
 * +202506017 dl tcl src: dl tcl src. (line 0)
 Local Variables:
