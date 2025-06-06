@@ -8,9 +8,32 @@ Node: Top, Up: (dir), Next:
 * dl tcl src: dl tcl src.
 * boost over 100M over github limit: boost over 100M over github limit.
 * now can get list of all sourceforge: now can get list of all sourceforge.
+* em234: em234.
 
 * Index manually::
 * Index by date::
+
+Node: em234, Up: Top, Prev: , Next:
+
+202506054
+ftp://xmlsoft.org/libxml2/libxml2-sources-2.7.8.tar.gz
+^-> ok
+
+http://download.osgeo.org/libtiff/tiff-3.9.4.tar.gz
+^-> https://download.osgeo.org/libtiff/old/tiff-3.9.4.tar.gz ok
+
+http://ftp.easysw.com/pub/cups/1.5.2/cups-1.5.2-source.tar.bz2
+^-> chg to http://ftp.ntua.gr/mirror/gnu/cups/1.5.2/cups-1.5.2-source.tar.bz2
+
+http://kent.dl.sourceforge.net/sourceforge/freetype/freetype-2.4.4.tar.bz2
+^-> chg to https://downloads.sourceforge.net/freetype/freetype-2.4.4.tar.bz2, ok
+
+http://kent.dl.sourceforge.net/sourceforge/libpng/libpng-1.5.9.tar.xz
+^-> chg to https://downloads.sourceforge.net/sourceforge/libpng/libpng-1.5.9.tar.xz, ok
+
+http://www.ijg.org/files/jpegsrc.v8c.tar.gz
+^-> ok
+
 
 Node: now can get list of all sourceforge, Up: Top, Prev: , Next:
 
@@ -71,6 +94,7 @@ Node: Index by date, Up: Top, Prev: , Next:
 * Menu:
 
 
+* +202506054 em234: em234. (line 0)
 * +202506021 now can get list of all sourceforge: now can get list of all sourceforge. (line 0)
 * +202506021 boost over 100M over github limit: boost over 100M over github limit. (line 0)
 * +202506017 dl tcl src: dl tcl src. (line 0)
