@@ -9,9 +9,15 @@ Node: Top, Up: (dir), Next:
 * boost over 100M over github limit: boost over 100M over github limit.
 * now can get list of all sourceforge: now can get list of all sourceforge.
 * em234: em234.
+* doc: doc.
 
 * Index manually::
 * Index by date::
+
+Node: doc, Up: Top, Prev: , Next:
+
+202506065
+https://kokada.dev/blog/quick-bits-basic-flake-nix-template/
 
 Node: em234, Up: Top, Prev: , Next:
 
@@ -94,6 +100,7 @@ Node: Index by date, Up: Top, Prev: , Next:
 * Menu:
 
 
+* +202506065 doc: doc. (line 0)
 * +202506054 em234: em234. (line 0)
 * +202506021 now can get list of all sourceforge: now can get list of all sourceforge. (line 0)
 * +202506021 boost over 100M over github limit: boost over 100M over github limit. (line 0)
